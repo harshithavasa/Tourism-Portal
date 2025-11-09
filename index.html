@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"/>
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <nav role="navigation" aria-label="main navigation">
+                <h1>Explore World</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Tours</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#book">Book</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" role="region" aria-label="home section">
+        <video class="bg-video" src="https://www.pexels.com/download/video/3015510/" autoplay muted loop playsinline></video>
+        <div class="overlay"></div>
+        <div class="home-content">
+            <h2>Welcome to Explore World</h2>
+            <p>Your gateway to unforgettable travel experiences, starts with us.</p>
+            <a href="#packages" class="btn" aria-label="Packages">Discover Tours</a>
+        </div>
+    </section>
+    <section id="destinations" class="section" role="region" aria-label="destinations section">
+        <div class="container">
+            <h2 id="destinations-heading">Popular Destinations</h2>
+            <div class="destinations-grid">
+                <article class="destinations-card">
+                    <img src="https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg" alt="Tower Bridge in London">
+                    <h3>London, UK</h3>
+                </article>  
+                <article class="destinations-card">
+                    <img src="https://images.pexels.com/photos/597049/paris-france-eiffel-tower-597049.jpeg" alt="Eiffel Tower in Paris">
+                    <h3>Paris, France</h3>
+                    </article>
+                <article class="destinations-card">
+                    <img src="https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg" alt="Tokyo cityscape">
+                    <h3>Tokyo, Japan</h3>
+                    </article>
+                <article class="destinations-card">
+                    <img src="https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg" alt="Statue of Liberty in New York">
+                    <h3>New York, USA</h3>
+                    </article>
+            </div>
+        </div>
+    </section>
+    <section id="packages" class="section" role="region" aria-label="tour packages section">
+        <div class="container">
+            <h2 id="pack-head">Tour Packages</h2>
+            <div class="packages-grid" role="listitem">
+                <article class="package" role="listitem">
+                    <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" alt="Beach resort">
+                    <h3>Tropical Paradise</h3>
+                    <p>7 Days in Maldives | From $1200</p>
+                    <button aria-label="Book Tropical Paradise">Book Now</a>
+                </article>
+                <article class="package" role="listitem">
+                    <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Mountain hiking">
+                    <h3>Mountain Adventure</h3>
+                    <p>5 Days in the Alps | From $800</p>
+                    <button aria-label="Book Mountain Adventure">Book Now</a>
+                </article>
+                <article class="package" role="listitem">
+                    <img src="https://images.pexels.com/photos/21014/pexels-photo.jpg" alt="City tour">
+                    <h3>City Explorer</h3>
+                    <p>4 Days in New York | From $1300</p>
+                    <button aria-label="Book City Explorer">Book Now</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="section" role="region" aria-label="testimonials section">
+        <div class="container">
+            <h2 id="test-head">What Our Travelers Say</h2>
+            <div class="testimonials-grid" role="list">
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left fa-2x"></i>
+                    <p>"An unforgettable experience! The tour was well organized and the guides were fantastic."</p>
+                    <h4> ~ Sarah L.</h4>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left fa-2x"></i>
+                    <p>"The planning was seamless, and all the arrangements were perfect, making the adventure incredibly easy."</p>
+                    <h4> ~ Victor R.</h4>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left fa-2x"></i>
+                    <p>"I will recommend your services to everyone I know, as the entire experience was faultless and unforgettable."</p>
+                    <h4> ~ Mike J.</h4>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section id="book" role="form" aria-label="booking">
+        <div class="container">
+            <h2 id="book-head">Book Your Tour</h2>
+            <p id="book-desc">Fill out this form and we'll reach out to you shortly.</p>
+            <form acria-label="book-form" class="booking-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="fullname" name="fname" required placeholder="Enter Full Name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter Email Address">
+
+                <label for="package">Select Package:</label>
+                <select id="package" name="package" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="tropical">Tropical Paradise</option>
+                    <option value="mountain">Mountain Adventure</option>
+                    <option value="city">City Explorer</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" name="requests" rows="4" placeholder="Any special requests?"></textarea>
+
+                <button type="submit" aria-label="Submit Booking">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <footer role="contentinfo">
+        <div class="container">
+            <h4>Connect With Us</h4>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <h4>Find Us Here</h4>
+            <iframe title="ExploreWorld Office Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019835235083!2d-122.41941538468187!3d37.77492977975932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d9d7b8a3%3A0x47fca1f7b3b9b0e!2sTravel%20Agency!5e0!3m2!1sen!2sin!4v1680000000000" allowfullscreen="" loading="lazy"></iframe>
+            <p>&copy; 2025 Explore World. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+ </body>
+ </html>
